@@ -36,6 +36,7 @@ class _NewsWidgetState extends State<NewsWidget> {
   }
 
   Future<Map> getNews() async {
+    ///CUSTOM URL HERE
     String url = ApiKey.newsUrl;
     http.Response res = await http.get(Uri.parse(url));
     return jsonDecode(res.body);
