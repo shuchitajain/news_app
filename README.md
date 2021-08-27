@@ -4,4 +4,4 @@ A Flutter app which makes use of the Google News Api to fetch news articles and 
 
 ## Screenshot
 
-<img src = "https://github.com/shuchitajain/movie_deck/blob/main/flutter_01.png" height = "250" width = "150">
+<img src = "https://github.com/shuchitajain/astrovistaartask/blob/main/flutter_01.png" height = "270" width = "150">
