@@ -20,7 +20,6 @@ class NewsWidget extends StatefulWidget {
 class _NewsWidgetState extends State<NewsWidget> {
   bool loading = true;
   Map news = {};
-  Future<void>? _launched;
 
   Future<void> launchURL(String url) async {
     if (!url.contains('http')) url = 'https://$url';
@@ -133,9 +132,8 @@ class _NewsWidgetState extends State<NewsWidget> {
                       children: <Widget>[
                         InkWell(
                           onTap: () {
-                            setState(() {
-                              _launched = launchURL(snapshot.data![index].url);
-                            });
+                            print('Launch');
+                            launchURL(snapshot.data![index].url);
                           },
                           child: Text(
                             'Go to website',
